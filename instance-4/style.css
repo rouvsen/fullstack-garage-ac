@@ -1,0 +1,11 @@
+div {
+    height: 500px;
+
+}
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../html-css/images/photo1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
