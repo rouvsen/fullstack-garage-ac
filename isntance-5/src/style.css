@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Header (Nav) and Main HTML - Background image */
+.first-container {
+    background-image: linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%),
+    url("../src/images/main-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #CFC9C6;
+}
+
+/* Header HTML */
+.header-container {
+    padding-top: 1.7rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 900;
+}
+a {
+    text-decoration: none;
+    color: #CFC9C6;
+}
+.header-a {
+    font-size: large;
+}
+.header-ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+/* Main HTML */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.main-content-sec {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h1 {
+    margin-top: 130px;
+    color: white;
+    font-size: 3.25rem;
+}
+.main-hr {
+    max-width: 3.25rem;
+    height: 0.15rem;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    margin: 1.2rem auto;
+}
+.main-p {
+    font-size: 25px;
+    font-weight: 300;
+}
+.main-a-btn {
+    display: block;
+    margin: auto;
+    padding: 25px 45px;
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: #E55F3A;
+    font-size:small;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Page Section HTML */
+.page-section {
+    font-family: inherit;
+    background-color: #E55F3A;
+    height: 65vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-sec-hr {
+    margin: 1.25rem auto;
+    max-width: 3.25rem;
+    background-color: #F8F9FA;
+    height: 0.2rem;
+    border-radius: 20px;
+}
+.page-sec-h2 {
+    font-size: 40px;
+}
+.page-sec-p {
+    font-family: "Merriweather Sans";
+    font-size: 23px;
+}
+.page-sec-a-btn {
+    font-family: inherit;
+    max-width: 10rem;
+    margin: auto;
+    display: block;
+    color: black;
+    background-color: #F8F9FA;
+    padding: 23px 0;
+    border: 1px solid red;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 23px;
+}
+
+/* Section-Download HTML*/
+.section-download {
+    height: 50vh;
+    background-color: #212529;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section-download h3 {
+    font-size: 40px;
+}
+.section-download a{
+    display: block;
+    font-weight: 600;
+    color: black;
+    padding: 24px 35px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+/* Contact Section HTML */
+.section-contact {
+    height: 100vh;
+    padding: 30rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-contact h2 {
+    margin-top: 30px;
+    font-size: 37px;
+}
+.contact-hr{
+    margin: 1.25rem auto;
+    max-width: 3.25rem;
+    background-color: #ff0000;
+    height: 0.2rem;
+    border-radius: 20px;
+}
+.section-contact p {
+    font-weight: 600;
+    color: #73767D;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#textarea-message {
+    font-weight: 600;
+    padding: 20px;
+    height: 10rem;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.form-btn {
+    font-size: large;
+    padding: 25px 35px;
+    color: white;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 35px;
+}
+#fullname, #email, #phone, #message {
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.phone-contact {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #212529;
+}
+.page-owner-phone {
+    margin-top: 40px;
+}
+.page-owner-phone img {
+    height: 45px;
+    width: 45px;
+    padding-bottom: 6px;
+}
+/* Footer Section */
+footer {
+    height: 15vh;
+    background-color: #F8F9FA;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: #768495;
+}
