@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 36px;
+    transition: .7s;
+}
+.logo {
+    color: #F9D036;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.navbar {
+    margin-right: 20px;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a {
+    color: #FFFFFF;
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+.navbar ul li a:hover {
+    color: #F9D036;
+}
+
+/* Content Section */
+.content {
+    color: white;
+    background-image: url("../src/images/header-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content h1, p, a {
+    text-align: center;
+}
+.content h1 {
+    font-size: 95px;
+    font-weight: bold;
+}
+.content p {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.content a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 25px 35px;
+    margin-top: 40px;
+    border: 1px solid #F7C71D;
+    background-color: #F7C71D;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    height: 93vh;
+    background-image: url("../src/images/map-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section h3 {
+    text-align: center;
+    color: #FFFFFF;
+}
+.contact-section p {
+    text-align: center;
+    color: #6C757D;
+}
+.contact-form {
+    display: flex;
+}
+
+/* Footer Section */
+.footer {
+    height: 12vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer p {
+    color: #303B4B;
+}
+.footer a {
+    text-decoration: none;
+    color: #303B4B;
+    margin-right: 15px;
+}
+.footer img {
+    width: 63px;
+    display: inline-block;
+    padding-right: 13px;
+}
