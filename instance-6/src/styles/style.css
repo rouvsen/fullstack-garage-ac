@@ -82,6 +82,22 @@
     border-radius: 10px;
 }
 
+/* Clients Section */
+.clients-section {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.svg-divs {
+    height: 100%;
+    width: 200px;
+}
+.img-svg {
+    height: 100%;
+    width: 100%;
+}
+
 /* Contact Section */
 .contact-section {
     height: 93vh;
