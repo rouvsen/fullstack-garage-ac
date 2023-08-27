@@ -6,6 +6,7 @@
 
 /* Header Section */
 .header {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -80,6 +81,136 @@
     border: 1px solid #F7C71D;
     background-color: #F7C71D;
     border-radius: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-sec-container {
+    text-align: center;
+    height: 130vh;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-section {
+    width: 80%;
+    margin: auto;
+}
+.portfolio-section h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.portfolio-section h3 {
+    color: #6C757D;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-bottom: 50px;
+}
+.portfolio-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+.portfolio-cards .portfolio-card {
+    height: 450px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+}
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.portfolio-card img {
+    width: 100%;
+}
+.portfolio-card h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.portfolio-card p {
+    color: #6c757d;
+    font-style: oblique;
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    height: 100vh;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-sec-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.team-sec-container h3 {
+    margin-bottom: 25px;
+}
+.team-sec-last-p {
+    margin-top: 33px;
+}
+.team-section h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.team-section h3 {
+    font-size: 18px;
+    font-style: oblique;
+    color: #6c757d;
+}
+.team-section p {
+    font-size: 19px;
+    color: #6c757d;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.card {
+    height: 410px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h4 {
+    font-size: 31px;
+}
+.card-icos {
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.card-ico {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+}
+.img-div {
+    height: 280px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.card-img {
+    display: block;
+    width: 250px;
+    border: 5px solid #DFE0E1;
+    border-radius: 50%;
 }
 
 /* Clients Section */
