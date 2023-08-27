@@ -47,7 +47,7 @@
 /* Content Section */
 .content {
     color: white;
-    background-image: url("../src/images/header-bg.jpg");
+    background-image: url("../images/header-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +85,7 @@
 /* Contact Section */
 .contact-section {
     height: 93vh;
-    background-image: url("../src/images/map-image.jpg");
+    background-image: url("../images/map-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -96,13 +96,54 @@
 .contact-section h3 {
     text-align: center;
     color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 .contact-section p {
     text-align: center;
     color: #6C757D;
+    font-style: oblique;
+    margin-bottom: 50px;
 }
 .contact-form {
+    width: 70%;
     display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 50%;
+}
+.contact-form-textarea {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.contact-form-textarea textarea {
+    padding: 25px;
+    width: 100%;
+    border-radius: 10px;
+}
+.inputs input{
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+}
+.contact-section button {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    border: 1px solid #ffc800;
+    background-color: #ffc800;
+    border-radius: 7px;
+    padding: 25px 40px;
+    margin-top: 40px;
 }
 
 /* Footer Section */
