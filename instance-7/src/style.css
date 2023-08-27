@@ -49,10 +49,12 @@ img {
     padding: 10px 25px;
     border-radius: 10px;
 }
+
+/* Main Section */
 main {
     height: 83vh;
     background-image: url("../src/images/main-background.jpg");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
