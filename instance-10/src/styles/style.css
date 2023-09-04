@@ -27,17 +27,18 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.head-sec-1 div:nth-child(2) {
+.head-1-right-real {
     display: flex;
     gap: 20px;
 }
-.head-sec-1 div:nth-child(2) div {
+.head-1-right-real div {
     margin-right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .head-sec-1 ul {
+    margin-left: 5px;
     display: flex;
     gap: 25px;
 }
@@ -67,6 +68,9 @@ header {
 #langs-selects {
     background: none;
     border: none;
+}
+#head-1-left-mobile {
+    display: none;
 }
 /* head-2 */
 .head-sec-2 {
@@ -99,6 +103,7 @@ header {
     display: flex;
 }
 .head-sec-2 div:nth-child(2) {
+    margin-right: 5px;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -117,6 +122,10 @@ header {
 }
 #logo-abb {
     width: 110px;
+    margin-left: 5px;
+}
+#head-sec2-right-mobile {
+    display: none;
 }
 /* head-3 */
 .head-sec-3 {
@@ -125,6 +134,7 @@ header {
     align-items: center;
 }
 .head-sec-3 ul {
+    margin-left: 5px;
     display: flex;
     gap: 25px;
 }
@@ -135,5 +145,30 @@ header {
 
 /* Responsive -> Header */
 @media (max-width: 990px) {
-    
+    .head-sec-3 {
+        display: none;
+    }
+    #head-sec2-left-for-mobile {
+        display: none;
+    }
+    #head-sec2-right-for-mobile {
+        display: none;
+    }
+    #head-sec2-right-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #head-sec2-right-mobile #mobile-res-menu {
+        color: black;
+        width: 20px;
+        margin-right: 10px;
+    }
+    #head-1-left-for-mobile {
+        display: none;
+    }
+    #head-1-left-mobile {
+        display: block;
+        margin-left: 5px;
+    }
 }
