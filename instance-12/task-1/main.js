@@ -1,0 +1,1 @@
+confirm() && (document.getElementById("body").style.backgroundColor = "black");
