@@ -1,0 +1,1 @@
+prompt("Your age:") < 18 ? alert("Your age less than 18") : null;
