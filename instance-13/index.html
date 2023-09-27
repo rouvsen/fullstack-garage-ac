@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event keyCode</title>
+    <style>
+        div{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #inp {
+            width: 700px;
+            border: none;
+            outline: none;
+            padding: 5px 10px;
+            border-bottom: 2px solid cyan;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <input id="inp" type="text">
+    </div>
+
+    <script>
+    const input = document.getElementById("inp");
+    input.addEventListener("keydown", function(event) {
+        if(event.keyCode === 8)
+            event.preventDefault();
+        if(event.keyCode === 32) {
+            input.value = input.value.slice(0, -1);
+            event.preventDefault();
+        }
+    })
+    </script>
+</body>
+</html>
