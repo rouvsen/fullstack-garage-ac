@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do Task Manage App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="member-container">
+        <div class="member-section">
+          
+          <div class="right">
+            <div>
+                <div id="container"></div>
+            </div>
+            <div class="center-line">
+              <div class="line"></div>
+            </div>
+            <div>
+              <a href="#" onClick={showModal} id="add-member-button" class="btn">
+                + New Member
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="dialog" class="dlg">
+        <div class="dlg-content">
+            <span id="close-dialog-button" class="cls">×</span>
+            <form class="form-new-member" id="member-form">
+                <label class="label-new-member" for="member-name-input">Member name:</label>
+                <input class="in-new-member" type="text" id="member-name-input" name="member-name-input" required>
+                <label class="label-new-member" for="member-image-input">Member image:</label>
+                <input class="in-new-member" type="file" id="member-image-input" name="member-image-input" accept="image/*" required>
+                <button id="cancel-dialog-button" class="btn">Cancel</button>
+                <button id="save-dialog-button" class="btn">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="task-controler-container">
+        <div class="task-control-section">
+            <div>
+                <input id="filter" type="text" placeholder="Task filter" onchange="loadTasks()">
+            </div>
+            <div>
+                <button id="createTaskBtn">Create New Task</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3>Create New Task</h3>
+            <form id="taskForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+                <label for="assignment">Assignment:</label>
+                <select id="assignment" name="assignment" required></select><br>
+                <input type="submit" value="Create">
+            </form>
+        </div>
+  
+    </div>
+  
+
+    <div class="boards">
+        <div class="board" id="board-1" ondrop="drop(event, 1)" ondragover="allowDrop(event)">
+            <h2>To Do</h2>
+        </div>
+        <div class="board" id="board-2" ondrop="drop(event, 2)" ondragover="allowDrop(event)">
+            <h2>In Progress</h2>
+        </div>
+        <div class="board" id="board-3" ondrop="drop(event, 3)" ondragover="allowDrop(event)">
+            <h2>In Review</h2>
+        </div>
+        <div class="board" id="board-4" ondrop="drop(event, 4)" ondragover="allowDrop(event)">
+            <h2>Done</h2>
+        </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
