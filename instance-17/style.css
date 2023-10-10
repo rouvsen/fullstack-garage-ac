@@ -73,6 +73,7 @@ ul, ol {
     opacity: 1;
 }
 .cart-modal {
+    background-color: rgb(255, 255, 255);
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -207,5 +208,8 @@ ul, ol {
     color: white;
     font-weight: bold;
     font-size: 18px;
+}
+.item-add-btn-div button:hover {
+    background-color: red;
 }
 /* main end */
