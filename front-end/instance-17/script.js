@@ -94,7 +94,7 @@ function getBasket() {
                 </h4>
             </div>
             <div>
-                <img width="15x" src="./icons8-close.svg" alt="remove-item-svg">
+                <img data-id="${item.id}" class="remove-item-from-cart-modal" width="15x" src="./icons8-close.svg" alt="remove-item-svg">
             </div>
         </div>
         `
@@ -104,6 +104,9 @@ function getBasket() {
 
 }
 getBasket();
+
+//TODO: get btns from html, add eventListener when click -> btnItemId == basket.find(any item id)
+//basket.splice()
 
         // If you don't want to use get all btns in fetch, you can use this version
         // let basket = localStorage.getItem("basket");
